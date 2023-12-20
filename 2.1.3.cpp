@@ -1,13 +1,13 @@
 #include <iostream>
 
-int cube(int &a) {
-    return a * a * a;
+void cube(int &a) {
+    a= a * a * a;
 }
 
 int main() {
     int a;
     std::cin >> a;
-    int result = cube(a);
-    std::cout << result << std::endl;
+    cube(a);
+    std::cout << a << std::endl;
     return 0;
 }
